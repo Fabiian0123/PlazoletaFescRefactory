@@ -30,7 +30,10 @@
         $stmt->bind_param("sisisi", $nombre, $nit, $direccion, $telefono, $url_logo, $propietario);
 
         if ($stmt->execute()) {
-        echo "Restaurante creado exitosamente";
+            echo'<script type="text/javascript">
+            alert("Restaurante Creado Exitosamente");
+            window.location.href="/plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php";
+            </script>';
         } else {
         echo "Error al crear el restaurante: " . $mysqli->error;
         }

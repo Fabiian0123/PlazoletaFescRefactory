@@ -58,6 +58,53 @@
                 
             </div>
         </section>
+        <!--Modal1-->
+        <section class="modal1 ">
+            <div class="modal__container1">
+                <h2 class="titulo--modal1">Crea Un Restaurante</h2>
+                <body>
+                     <form action="/plazoletaFesc/Controller/crearRestauranteController.php" method="POST">
+		
+                        <label class="sty-form-modal1" for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" required><br><br>
+
+                        <label class="sty-form-modal1" for="nit">NIT:</label>
+                        <input type="number" name="nit" required><br><br>
+
+                        <label class="sty-form-modal1" for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" required><br><br>
+
+                        <label class="sty-form-modal1" for="telefono">Teléfono:</label>
+                        <input type="number" name="telefono" required><br><br>
+
+                        <label class="sty-form-modal1" for="urlLogo">Logo:</label>
+                        <input type="text" name="urlLogo" required><br><br>
+
+                        <label class="sty-form-modal1" for="propietario">Propietario:</label>
+                        <select name="propietario" required><br><br>
+
+                            <option value="">Seleccione un propietario</option>
+                            <?php
+                                $conexion = new mysqli("localhost", "root", "", "plazoleta");
+
+                                $query = "SELECT id, nombre, apellido FROM usuario WHERE rol = 'propietario'";
+
+                                $resultado = $conexion->query($query);
+
+                                while ($fila = $resultado->fetch_assoc()) {
+                                    echo "<option value='" . $fila["id"] . "'>" . $fila["nombre"] . " " . $fila["apellido"] . "</option>";
+                                }
+
+                                $conexion->close();
+                            ?>
+                        </select><br><br>
+                        
+                         <input class="crear__rest" type="submit" value="Crear Restaurante">
+                         <a href="#" class="modal__close1">Cerrar</a>
+                    </form>
+                </body>
+            </div>
+        </section>
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -73,7 +120,7 @@
             <h1 class="mb-1">¿Que quieres hacer hoy?</h1>
             <h3 class="mb-5"><em>Puedes realizar estas acciones</em></h3>
             <a id="restaurante" class="btn-abrir-popup btn-xl">Crear Un Propietario</a>
-            <a id="propietario" class="btn-abrir-popup btn-xl">Crear Un Restaurante</a>
+            <a id="propietario" class="btn-abrir-popup btn-x2">Crear Un Restaurante</a>
         </div>
           
     </header>
@@ -105,7 +152,8 @@
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="/plazoletaFesc/View/DashboardAdministrador/js/main.js"></script>   
+    <script src="/plazoletaFesc/View/DashboardAdministrador/js/main.js"></script>
+    <script src="/plazoletaFesc/View/DashboardAdministrador/js/main1.js"></script>   
   
 </body>
 

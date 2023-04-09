@@ -32,7 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sisssii", $nombre, $precio, $descripcion, $url_imagen, $categoria, $activo, $id_restaurante);
 
     if ($stmt->execute()) {
-        echo "plato creado exitosamente";
+        echo'<script type="text/javascript">
+        alert("Restaurante Creado Exitosamente");
+        window.location.href="/plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php";
+        </script>';
     } else {
         echo "Error al crear el plato: " . $mysqli->error;
     }
