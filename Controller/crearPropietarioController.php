@@ -34,7 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $stmt->bind_param("ssissss", $nombre, $apellido, $documento, $celular, $correo, $clave, $rol);
 
   if ($stmt->execute()) {
-    echo "Propietario creado exitosamente";
+    echo'<script type="text/javascript">
+    alert("Propietario Creado Exitosamente");
+    window.location.href="/plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php";
+    </script>';
   } else {
     echo "Error al crear el propietario: " . $mysqli->error;
   }

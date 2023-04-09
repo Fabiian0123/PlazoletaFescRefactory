@@ -13,7 +13,7 @@
 		}
 	?>
 	<h1>Crear Restaurante</h1>
-	<form action="../Controller/crearRestauranteController.php" method="POST">
+	<form action="/plazoletaFesc/Controller/crearRestauranteController.php" method="POST">
 		
 		<label for="nombre">Nombre:</label>
 		<input type="text" name="nombre" required><br>

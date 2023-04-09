@@ -78,7 +78,8 @@
 		
 		exit();
 	}
-
+	
+	/*
 	if ($_SESSION["usuario_rol"] == "usuario") {
 
 		echo "<p>Este contenido solo es visible para usuarios.</p>";
@@ -96,14 +97,11 @@
 
 	} elseif ($_SESSION["usuario_rol"] == "administrador") {
 
-		
-		header("Location: /plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php");
-		exit();
-
-		/*echo "<p>Este contenido solo es visible para administradores.</p><br>";
+		echo"<p>Este contenido solo es visible para administradores.</p><br>";
 		echo "<a href='./crearPropietario.php'>Crear propietario.</a><br>";
-		echo "<a href='./crearRestaurante.php'>Crear restaurante.</a><br>";*/
+		echo "<a href='./crearRestaurante.php'>Crear restaurante.</a><br>";
 	}
+	*/
 	?>
 	<!--<p><a href="../Controller/logout.php">Cerrar Sesión</a></p>-->
 </body>

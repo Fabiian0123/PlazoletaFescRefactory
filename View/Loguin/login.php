@@ -39,10 +39,12 @@
 						<div class="rol">
 							<label  for="rol">Selecciona Un Rol:</label>
 							<select id="rol" name="rol">
+								<option>Seleccione</option>
 								<option value="usuario">Usuario</option>
 								<option value="empleado">Empleado</option>
 								<option value="propietario">Propietario</option>
 								<option value="administrador">Administrador</option>
+							</select>
 							</select>
 						</div>
 				

@@ -30,11 +30,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$_SESSION["usuario_nombre"] = $usuario["Nombre"];
 		$_SESSION["usuario_rol"] = $usuario["Rol"];
 
-		header("Location: ../View/index.php");
-		exit();
+		if ($_SESSION["usuario_rol"] == "usuario") {
 
-	} else {
-		echo "El usuario no existe o no tiene el rol especificado.";
+			echo "<p>Este contenido solo es visible para usuarios.</p>";
+	
+		} elseif ($_SESSION["usuario_rol"] == "empleado") {
+	
+			echo "<p>Este contenido solo es visible para empleados.</p>";
+	
+		} elseif ($_SESSION["usuario_rol"] == "propietario") {
+	
+			echo "<p>Este contenido solo es visible para propietarios.</p><br>";
+			
+	
+		} elseif ($_SESSION["usuario_rol"] == "administrador") {
+			
+			header("Location: /plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php");
+			exit();
+		}	
+	}
+	else {
+		echo '<script type="text/javascript">
+    	alert("Usuario, Contraseña Incorrectos, Especifique Un Rol Valido");
+    	window.location.href="/plazoletaFesc/View/Loguin/login.php";
+    	</script>';
 	}
 
 	$stmt->close();

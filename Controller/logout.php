@@ -4,6 +4,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location: ../View/login.php");
+header("Location: /plazoletaFesc/View/Loguin/login.php");
 exit();
 ?>
