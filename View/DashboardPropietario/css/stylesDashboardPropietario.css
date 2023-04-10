@@ -5479,8 +5479,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
-/*MODAL*/
-.modal {
+/*MODAL3*/
+.modal3 {
   position: fixed;
   top: 0;
   left: 0;
@@ -5494,7 +5494,7 @@ textarea.form-control-lg {
   --transform: translateY(-100vh);
   --transition: transform .8s;
 }
-.modal--show{
+.modal--show3{
   opacity: 1;
   pointer-events: unset;
   transition: opacity .6s;
@@ -5503,7 +5503,7 @@ textarea.form-control-lg {
   
 }
 
-.modal__container{
+.modal__container3{
   margin: auto;
   width: 90%;
   max-width: 600px;
@@ -5518,7 +5518,7 @@ textarea.form-control-lg {
   transform: var(--transform);
   transition: var(--transition);
 }
-.modal__close{
+.modal__close3{
   text-decoration: none;
   color: #fff;
   background-color:red;
@@ -5532,18 +5532,18 @@ textarea.form-control-lg {
   font-size: 20px;
   
 }
-.modal__close:hover{
+.modal__close3:hover{
   color:#F26250;
   background-color: #fff; 
 }
-.sty-form-modal{
+.sty-form-modal3{
   color: #000;
   font-family: Arial black;
   width: 20px;
   margin-right: 90px;
   
 }
-.crear__pro{
+.crear__emple{
   text-decoration: none;
   color: #fff;
   background-color:red;
@@ -5556,19 +5556,19 @@ textarea.form-control-lg {
   font-family: Arial;
   font-size: 20px;
 }
-.crear__pro:hover{
+.crear__emple:hover{
   color:#F26250;
   background-color: #fff; 
 }
-.titulo--modal{
+.titulo--modal3{
   color: #000;
 }
-/* FIN DEL MODAL*/
+/* FIN DEL MODAL3*/
 
 
 
-/*MODAL1*/
-.modal1 {
+/*MODAL4*/
+.modal4 {
   position: fixed;
   top: 0;
   left: 0;
@@ -5582,7 +5582,7 @@ textarea.form-control-lg {
   --transform: translateY(-100vh);
   --transition: transform .8s;
 }
-.modal--show1{
+.modal--show4{
   opacity: 1;
   pointer-events: unset;
   transition: opacity .6s;
@@ -5591,7 +5591,7 @@ textarea.form-control-lg {
   
 }
 
-.modal__container1{
+.modal__container4{
   margin: auto;
   width: 90%;
   max-width: 600px;
@@ -5606,7 +5606,7 @@ textarea.form-control-lg {
   transform: var(--transform);
   transition: var(--transition);
 }
-.modal__close1{
+.modal__close4{
   text-decoration: none;
   color: #fff;
   background-color:red;
@@ -5620,18 +5620,18 @@ textarea.form-control-lg {
   font-size: 20px;
   
 }
-.modal__close1:hover{
+.modal__close4:hover{
   color:#F26250;
   background-color: #fff; 
 }
-.sty-form-modal1{
+.sty-form-modal4{
   color: #000;
   font-family: Arial black;
   width: 20px;
-  margin-right: 90px;
+  margin-right: 100px;
   
 }
-.crear__rest{
+.crear__plat{
   text-decoration: none;
   color: #fff;
   background-color:red;
@@ -5644,18 +5644,20 @@ textarea.form-control-lg {
   font-family: Arial;
   font-size: 20px;
 }
-.crear__rest:hover{
+.crear__plat:hover{
   color:#F26250;
   background-color: #fff; 
 }
-.titulo--modal1{
+.titulo--modal4{
   color: #000;
 }
-/*FIN DEL MODAL1*/
+/*FIN DEL MODAL4*/
 
-
-
-.btn-x2{
+.btn-x3{
+  padding: 1.25rem 2.5rem;
+  border-radius: 10px;
+}
+.btn-x4{
   padding: 1.25rem 2.5rem;
   border-radius: 10px;
 }
@@ -11380,7 +11382,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/fondodashbordAdmin.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/fondodashbordPropietario.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

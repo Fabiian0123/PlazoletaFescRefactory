@@ -40,7 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 		} elseif ($_SESSION["usuario_rol"] == "propietario") {
 	
-			echo "<p>Este contenido solo es visible para propietarios.</p><br>";
+			header("Location: /plazoletaFesc/View/DashboardPropietario/DashboardPropietario.php");
+			exit();
 			
 	
 		} elseif ($_SESSION["usuario_rol"] == "administrador") {

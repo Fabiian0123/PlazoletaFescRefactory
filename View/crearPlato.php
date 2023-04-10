@@ -14,7 +14,7 @@
 		$id = $_SESSION["usuario_id"];
 	?>
 	<h1>Crear Plato</h1>
-	<form method="POST" action="../Controller/crearPlatoController.php">
+	<form method="POST" action="plazoletaFesc/Controller/crearPlatoController.php">
 		
 		<label for="nombre">Nombre:</label>
 		<input type="text" id="nombre" name="nombre" required><br><br>

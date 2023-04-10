@@ -52,31 +52,6 @@
 							<input class="login100-form-btn" type="submit" value="Ingresar">
 						</div>
 					</form>
-				<!--
-				<form action="logicaLoguinAdmin.php" method="post" class="login100-form validate-form p-b-33 p-t-5">
-
-					<div class="wrap-input100 validate-input" data-validate="Ingrese el usuario">
-						<input class="input100" type="text" name="usuario" placeholder="Correo">
-						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Ingrese la contraseña">
-						<input class="input100" type="password" name="password" placeholder="Clave">
-						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
-					</div>
-
-					<div>
-
-					</div>
-
-					<div class="container-login100-form-btn m-t-32">
-						<button class="login100-form-btn">
-							Ingresar
-						</button>
-					</div>
-
-				</form>
-				-->
 			</div>
 		</div>
 	</div>
@@ -92,25 +67,5 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
-
-	<!--
-		<form action="../Controller/loginController.php" method="POST">
-		<label for="correo">Correo:</label>
-		<input type="email" id="correo" name="correo"><br>
-
-		<label for="clave">Clave:</label>
-		<input type="password" id="clave" name="clave"><br>
-
-		<label for="rol">Rol:</label>
-		<select id="rol" name="rol">
-			<option value="usuario">Usuario</option>
-			<option value="empleado">Empleado</option>
-			<option value="propietario">Propietario</option>
-			<option value="administrador">Administrador</option>
-		</select><br>
-
-		<input type="submit" value="Iniciar Sesión">
-	</form>
-	-->
 </body>
 </html>

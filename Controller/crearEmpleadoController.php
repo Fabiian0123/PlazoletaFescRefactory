@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $user = 'root';
   $pass = '';
 
+
   $mysqli = new mysqli($host, $user, $pass, $db);
 
   if ($mysqli->connect_error) {
@@ -33,7 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $stmt->bind_param("ssissss", $nombre, $apellido, $documento, $celular, $correo, $clave, $rol);
 
   if ($stmt->execute()) {
-    echo "Empleado creado exitosamente";
+    echo'<script type="text/javascript">
+    alert("Empleado Creado Exitosamente");
+    window.location.href="/plazoletaFesc/View/DashboardPropietario/DashboardPropietario.php";
+    </script>';
   } else {
     echo "Error al crear el empleado: " . $mysqli->error;
   }

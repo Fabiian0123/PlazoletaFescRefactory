@@ -33,8 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($stmt->execute()) {
         echo'<script type="text/javascript">
-        alert("Restaurante Creado Exitosamente");
-        window.location.href="/plazoletaFesc/View/DashboardAdministrador/DashboardAdminhtml.php";
+        alert("Plato Creado Exitosamente");
+        window.location.href="/plazoletaFesc/View/DashboardPropietario/DashboardPropietario.php";
         </script>';
     } else {
         echo "Error al crear el plato: " . $mysqli->error;
