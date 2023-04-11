@@ -36,7 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 		} elseif ($_SESSION["usuario_rol"] == "empleado") {
 	
-			echo "<p>Este contenido solo es visible para empleados.</p>";
+			header("Location: /plazoletaFesc/View/DashboardEmpleado/DashboardEmpleado.php");
+			exit();
 	
 		} elseif ($_SESSION["usuario_rol"] == "propietario") {
 	

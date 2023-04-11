@@ -45,7 +45,7 @@
                         <input type="number" id="documento" name="documento" required><br><br>
 
                         <label class="sty-form-modal" for="celular">Celular:</label>
-                        <input type="number" id="celular" name="celular" required><br><br>
+                        <input type="number" id="celular" name="celular" require><br><br>
 
                         <label class="sty-form-modal" for="correo">Correo:</label>
                         <input type="email" id="correo" name="correo" required><br><br>
