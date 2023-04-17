@@ -30,7 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$stmt->bind_param("isi", $precio, $descripcion, $id);
 
 	if ($stmt->execute()) {
-        echo "plato modificado exitosamente";
+        echo'<script type="text/javascript">
+        alert("Plato Modificado Correctamente");
+        window.location.href="/plazoletaFesc/View/DashboardPropietario/DashboardPropietario.php";
+        </script>';
     } else {
         echo "Error al modificar el plato: " . $mysqli->error;
     }

@@ -57,7 +57,8 @@
                 </body>
 
             </div>
-    </section>        
+    </section>
+    <!--Fin Modal3-->        
     <!--Modal4-->
     <section class="modal4">
             <div class="modal__container4">
@@ -110,7 +111,49 @@
                     </form>
                 </body>
             </div>
-    </section>        
+    </section>
+    <!--Fin Modal4-->   
+    <!--Modal5-->
+    <section class="modal5">
+            <div class="modal__container5">
+                <h2 class="titulo--modal5">Modificar Plato</h2>
+                <body>
+                    
+                    <form method="POST" action="/plazoletaFesc/Controller/modificarPlatoController.php">
+
+                        <label class="sty-form-modal5" for='id'>Plato:</label>
+                        <select id='id' name='id'>
+                            <option  value=''>Seleccione</option>
+                            
+                            <?php
+                                $conexion = new mysqli("localhost", "root", "", "plazoleta");
+
+                                $query = "SELECT id, Nombre, Precio FROM plato";
+
+                                $resultado = $conexion->query($query);
+
+                                while ($fila = $resultado->fetch_assoc()) {
+                                    echo "<option value='" . $fila["id"] . "'>" . $fila["Nombre"] . " " . $fila["Precio"] . "</option>";
+                                }
+
+                                $conexion->close();
+                            ?>
+                    
+                        </select><br><br>
+
+                        <label class="sty-form-modal5" for="precio">Precio:</label>
+                        <input type="number" name="precio" required><br><br>
+
+                        <label class="sty-form-modal5" for="descripcion">Descripción:</label>
+                        <textarea name="descripcion" required></textarea><br><br>
+
+                        <input class="mod__plat" type="submit" value="Modificar">
+                        <a href="#" class="modal__close5">Cerrar</a>
+                    </form>
+                </body>
+            </div>
+    </section>
+    <!--Fin Modal5--> 
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -127,6 +170,8 @@
             <h3 class="mb-5"><em>Puedes realizar estas acciones</em></h3>
             <a id="restaurante" class="btn-abrir-popup btn-x3">Crear Un Empleado</a>
             <a id="propietario" class="btn-abrir-popup btn-x4">Crear Un Nuevo Plato</a>
+            <a id="modplato" class="btn-abrir-popup btn-x5">Modificar Un Plato</a>
+
         </div>
           
     </header>
@@ -159,8 +204,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="/plazoletaFesc/View/DashboardPropietario/js/main3.js"></script>
-    <script src="/plazoletaFesc/View/DashboardPropietario/js/main4.js"></script>   
-  
+    <script src="/plazoletaFesc/View/DashboardPropietario/js/main4.js"></script>
+    <script src="/plazoletaFesc/View/DashboardPropietario/js/main5.js"></script>   
+   
 </body>
 
 
